@@ -1,0 +1,39 @@
+{
+  "produk": [
+    {
+      "id": 1,
+      "name_produk": "parfum",
+      "price": 200000,
+      "image": "https://images.unsplash.com/photo-1615160460524-432433ba1b8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFyZnVtfGVufDB8fDB8fHww",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name_produk": "Serum",
+      "price": 200000,
+      "image": "https://images.unsplash.com/photo-1619166855062-f63c187def3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNlcGF0dSUyMHByb2R1a3xlbnwwfHwwfHx8MA%3D%3D",
+      "status": true
+    },
+    {
+      "id": 3,
+      "name_produk": "Serum 2",
+      "price": 200000,
+      "image": "https://images.unsplash.com/photo-1620104399414-98e6b7559d90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
+      "status": true
+    },
+    {
+      "id": 4,
+      "name_produk": "Body Serum",
+      "price": 200000,
+      "image": "https://images.unsplash.com/photo-1693456563016-b7b78fa92d96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
+      "status": true
+    },
+    {
+      "id": 5,
+      "name_produk": "Lipstik",
+      "price": 200000,
+      "image": "https://images.unsplash.com/photo-1637814316735-28164dfd2af5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8",
+      "status": true
+    }
+  ]
+}
