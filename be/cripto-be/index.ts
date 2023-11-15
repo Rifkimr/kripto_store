@@ -12,8 +12,15 @@ AppDataSource.initialize()
     const port = process.env.PORT;
     const cors = require("cors");
 
-    // const router = express.Router();
-    app.use(cors());
+    // Configure CORS middleware
+    app.use(
+      cors({
+        origin: "https://kripto-store.vercel.app",
+        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        credentials: true, // Enable credentials (if you need to include cookies or HTTP authentication)
+      })
+    );
+
     app.use(express.json());
     app.use("/uploads", express.static(path.join(__dirname + "/uploads")));
     app.use("/api/v1", router);
