@@ -86,7 +86,10 @@ const ManajemenProduk = () => {
                           width: "60px",
                           borderRadius: "5px",
                         }}
-                        image={"http://localhost:5000/uploads/" + product.image}
+                        image={
+                          "http://kriptostore-production.up.railway.app/uploads/" +
+                          product.image
+                        }
                         title={product.name_produk}
                       />
                     </TableCell>
