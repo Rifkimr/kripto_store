@@ -13,11 +13,16 @@ AppDataSource.initialize()
     const cors = require("cors");
 
     // Configure CORS middleware
+    const allowedOrigins = ["https://kripto-store.vercel.app"];
     app.use(
       cors({
-        origin: "https://kripto-store.vercel.app",
-        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-        credentials: true, // Enable credentials (if you need to include cookies or HTTP authentication)
+        origin: function (origin, callback) {
+          if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+            callback(null, true);
+          } else {
+            callback(new Error("Not allowed by CORS"));
+          }
+        },
       })
     );
 
