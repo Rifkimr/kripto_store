@@ -3,12 +3,14 @@ import { Request, Response } from "express";
 import * as cors from "cors";
 import { AppDataSource } from "./src/data-source";
 import router from "./src/route/index";
+import dotenv = require("dotenv");
 import path = require("path");
+dotenv.config();
 
 AppDataSource.initialize()
   .then(async () => {
     const app = express();
-    const port = 5000;
+    const port = process.env.PORT;
 
     // const router = express.Router();
     app.use(cors());
