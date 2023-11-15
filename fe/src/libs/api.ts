@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "kriptostore-production.up.railway.app",
+  baseURL: "https://kriptostore-production.up.railway.app/",
 });
 
 export function setAuthToken(token: string) {
