@@ -75,9 +75,9 @@ export default function ModalEditProduk({
       });
       refetch();
       handleClose();
-    } catch (error: never) {
+    } catch (error) {
       console.log(error);
-      alert(error.response.data.message);
+      alert(error);
     }
   };
 
