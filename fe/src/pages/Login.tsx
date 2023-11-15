@@ -1,5 +1,6 @@
 import { Box, Typography, TextField, Button, FormControl } from "@mui/material";
 import UseLogin from "../hooks/UseLogin";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   const { handleLogin, handleChange } = UseLogin();
@@ -85,6 +86,19 @@ export const Login = () => {
             >
               Contained
             </Button>
+            <Typography mt={1}>
+              Don't have an account?
+              <Link
+                to="/register"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  color: "#176ECA",
+                }}
+              >
+                Daftar
+              </Link>
+            </Typography>
           </Box>
         </Box>
       </Box>

@@ -1,5 +1,6 @@
 import { Box, Typography, TextField, Button, FormControl } from "@mui/material";
 import UseRegister from "../hooks/UseRegister";
+import { Link } from "react-router-dom";
 
 export const Register = () => {
   const { handleRegister, handleChange } = UseRegister();
@@ -109,6 +110,19 @@ export const Register = () => {
             >
               Daftar
             </Button>
+            <Typography mt={1}>
+              You have an account?{" "}
+              <Link
+                to="/login"
+                style={{
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  color: "#176ECA",
+                }}
+              >
+                Login
+              </Link>
+            </Typography>
           </Box>
         </Box>
       </Box>
